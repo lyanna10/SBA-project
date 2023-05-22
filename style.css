@@ -1,0 +1,180 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(0, 189, 255);
+    position: fixed;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header ul {
+    font-size: 30px;
+}
+
+header li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:hover {
+    background-color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 35px;
+}
+
+.sectionDivOne {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mainImg {
+    /*width: 100vw;*/
+    height: 100vh;
+}
+
+.imgTwo {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(0, 189, 255);
+    padding: 35px;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+footer a:hover {
+    background-color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#maniSectionOne {
+    display: flex;
+    justify-content: end;
+    background-color: rgb(0, 110, 239);
+    color: white;
+    margin-top: 12%;
+    margin-left: 2.5%;
+    height: 350px;
+    padding: 50px;
+    border-radius: 2rem;
+    animation-name: main;
+    animation-duration: 5s;
+}
+
+@keyframes main {
+    form {
+        background-color: rgb(0, 110, 239);
+    }
+
+    to {
+        background-color: rgb(4, 209, 4);
+    }
+}
+
+#submit {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(0, 189, 255);
+    color: white;
+    border: none;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+/*Media query*/
+
+@media only screen and (max-width: 600px) {
+    html {
+        background-color: black;
+    }
+
+    main {
+        margin: 4%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 0;
+        position: relative;
+    }
+
+    /*.mainImg {
+        width: 500px;
+    }*/
+
+    .mainImg {
+        display: none;
+    }
+
+    .imgTwo {
+        src: url(images/coffee-ceremony.jpeg) !important;
+        display: block;
+        width: 500px;
+    }
+
+    .sectionDivOne {
+        margin-left: 5%;
+    }
+
+    #maniSectionOne {
+        margin: 5px;
+        width: 401px;
+        margin-left: 0;
+    }
+
+    form {
+        margin-right: 70px;
+    }
+
+    footer {
+        display: flex;
+        flex-grow: 4;
+    }
+}
+
+/* colors .color1 {
+    color: #322c56;
+}
+
+.color2 {
+    color: #5d3c71;
+}
+
+.color3 {
+    color: #9c5293;
+}
+
+.color4 {
+    color: #f170b9;
+}
+
+.color5 {
+    color: #ff99de;
+}*/
